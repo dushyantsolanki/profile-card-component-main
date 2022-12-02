@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/images/bg-pattern-bottom.svg"),
+    url("/images/bg-pattern-top.svg");
+  background-position: top 23rem left 47rem, bottom 13rem right 52rem;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.full-card {
+  height: 21.9rem;
+  width: 21.84rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: white;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.224));
+}
+.name-city {
+  margin: 0 0 1.3rem;
+  text-align: center;
+}
+#head-top {
+  margin: 0rem 0 0.3rem 0;
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.758);
+}
+.user-name {
+  padding: 0.8rem 0 0 0;
+  display: flex;
+  align-items: center;
+}
+h3 {
+  margin: 0.5rem;
+}
+.age {
+  color: rgba(0, 0, 0, 0.596);
+}
+.profile {
+  display: flex;
+  justify-content: center;
+}
+img {
+  height: 5rem;
+  width: 5rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin: -2.8rem 0 0 0;
+}
+svg {
+  height: 7.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.social-feture {
+  display: flex;
+  font-weight: bolder;
+  letter-spacing: 0.05rem;
+}
+
+.photos {
+  text-align: center;
+}
+.likes {
+  text-align: center;
+  margin: 0 3.5rem 0 3.5rem;
+}
+.followers {
+  text-align: center;
+}
+hr {
+  margin-bottom: 1.52rem;
+  width: 21.5rem;
+  color: rgba(0, 0, 0, 0.473);
+}
+
+p {
+  margin: 0.2rem 0 0 0;
+  font-size: x-small;
+  font-weight: 400;
+  letter-spacing: 0.14rem;
+  color: rgba(0, 0, 0, 0.564);
+}
+
+@media only screen and (max-width: 275px) {
+
+  body {
+    background-position: top 18rem left 6.5rem, bottom 13rem right 11rem;
+    
+  }
+
+  .full-card {
+    height: 18rem;
+    width: 14.5rem; 
+  }
+  svg {
+    width: 14.5rem;
+    height: 5rem;
+  }
+  hr {
+    margin-bottom: 1rem;
+    width: 14rem;
+  }
+
+  .likes {
+    text-align: center;
+    margin: 0 1.3rem 0 1.3rem;
+  }
+  img {
+    height: 4rem;
+    width: 4rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: -2.4rem 0 0 0;
+  }
+  h3 {
+    margin: 0.2rem;
+    font-size: large;
+  }
+
+  
+}
